@@ -1,0 +1,55 @@
+.input-box {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 25%;
+  flex-shrink: 0;
+  background: #005984;
+}
+.titleform {
+  font-family: Permanent Marker;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.titleinput {
+  font-family: Permanent Marker;
+  color: #f0e5cd;
+  margin: 20px 0px;
+}
+
+.input-box-heading {
+  margin-top: 41.48px;
+  justify-content: flex-start;
+  width: 334px;
+  height: 61.733px;
+  flex-shrink: 0;
+}
+
+h2 {
+  color: #f0e5cd;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.copyright {
+  width: 185px;
+  height: 22.185px;
+  flex-shrink: 0;
+}
+
+p {
+  color: #f0e5cd;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

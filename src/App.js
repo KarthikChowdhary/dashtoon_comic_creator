@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Navbar } from "./components";
+import { InputBox, ComicStrip } from "./containers";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { React, useState } from "react";
 
 function App() {
+  const [images, setImages] = useState([]);
+  const [title, setTitle] = useState("");
+
+  const onc = (e) => {
+    setTitle(e.target.value);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Navbar />
+      </div>
+      <div className="home-container">
+        <InputBox images={images} onc={onc} title={title} />
+        <ToastContainer />
+        <ComicStrip images={images} title={title} />
+      </div>
     </div>
   );
 }

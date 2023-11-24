@@ -1,0 +1,15 @@
+.navbar {
+  background-color: #b20142;
+}
+.navbar-brand {
+  color: #efd02b;
+  font-family: Permanent Marker;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar-brand:hover {
+  color: #efd02b;
+}
